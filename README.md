@@ -3,7 +3,7 @@
 A starting point for webvr projects using [A-Frame](https://aframe.io).
 
 * Based on a stripped down version of [A-Painter](https://github.com/aframevr/a-painter).
-* Includes aframe-teleport-controls.
+* Includes [aframe-teleport-controls](https://github.com/fernandojsg/aframe-teleport-controls).
 
 ## Usage
 
