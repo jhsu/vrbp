@@ -1,5 +1,3 @@
-require('../vendor/aframe.min.js');
-
-require('aframe-teleport-controls');
+require('aframe');
 
 require('./components/if-no-vr-headset.js');

@@ -19,6 +19,6 @@
     "snazzy": "^4.0.1",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.1",
-    "aframe-teleport-controls": "^0.1.0"
+    "aframe": "^0.4.0"
   }
 }
