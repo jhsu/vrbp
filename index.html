@@ -9,6 +9,7 @@
   <body style="background-color: #030404">
     <a-scene>
       <a-assets>
+        <img id="room" src="/ground.png" crossOrigin="anonymous">
         <img id="floor" src="https://cdn.aframe.io/a-painter/images/floor.jpg" crossOrigin="anonymous">
         <img id="skymap" src="https://cdn.aframe.io/a-painter/images/sky.jpg" crossOrigin="anonymous">
         <img id="uinormal" src="https://cdn.aframe.io/a-painter/images/ui-normal.png" crossOrigin="anonymous">
@@ -23,15 +24,12 @@
                 vive-controls="hand: right"
                 if-no-vr-headset="visible: false"></a-entity>
 
-      <a-entity id="ground"
-                geometry="primitive: circle; radius: 12;"
-                rotation="-90 0 0"
-                material="shader: flat; src: #floor">
-      </a-entity>
-      <a-entity id="sky"
-                geometry="primitive:sphere; radius:30; phiLength:360; phiStart:0; thetaLength:90"
-                material="shader:flat; side:back; height:2048; src:#skymap; width:2048">
-      </a-entity>
+      <a-entity
+        geometry="primitive: sphere; radius: 1000; segmentsWidth: 64; segmentsHeight: 64"
+        material="shader: flat; fog: false; src: #room"
+        scale="-1 1 1"
+        rotation="0 -60 0"
+      ></a-entity>
     </a-scene>
   </body>
 </html>
