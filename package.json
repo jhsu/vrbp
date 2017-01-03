@@ -14,11 +14,13 @@
     ]
   },
   "devDependencies": {
+    "aframe": "^0.4.0",
+    "aframe-physics-system": "^1.1.0",
     "cross-env": "^2.0.1",
+    "json-loader": "^0.5.4",
     "semistandard": "^9.0.0",
     "snazzy": "^4.0.1",
     "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.16.1",
-    "aframe": "^0.4.0"
+    "webpack-dev-server": "^1.16.1"
   }
 }

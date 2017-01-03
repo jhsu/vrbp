@@ -7,6 +7,14 @@ if (process.env.NODE_ENV === 'production') {
 
 module.exports = {
   entry: './src/index.js',
+  resolve: {
+    extensions: ['', '.js', '.json']
+  },
+  module: {
+    loaders: [
+      {test: /\.json$/, loader: "json"}
+    ],
+  },
   output: {
     path: __dirname,
     filename: 'build.js'
